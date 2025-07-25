@@ -44,7 +44,7 @@
   --cursor-pointer: url("../images/cursor/reimu-cursor-pointer.png"), pointer;
   --cursor-text: url("../images/cursor/reimu-cursor-text.png"), text;
   --footer-icon: url("../images/taichi.png");
-  --sponsor-icon: url("../images/alipay.jpg");
+  --sponsor-icon: url("/images/taichi-fill.png");
   --top-icon: url("../images/taichi.png");
   --shadow-meta: 0 0 5px 2px var(--color-meta-shadow);
   --shadow-meta-hover: 0 0 6px 4px var(--color-meta-shadow);
