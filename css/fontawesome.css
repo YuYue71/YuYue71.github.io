@@ -121,6 +121,15 @@
   font-family: var(--font-icon);
   content: "\f105";
 }
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-twitter:before {
+  content: "\e61b";
+}
+.icon-reddit:before {
+  content: "\f1a1";
+}
 .sidebar-btn-wrapper .sidebar-toc-btn:before {
   font-family: var(--font-icon);
   content: "\f0e8";
@@ -148,6 +157,10 @@
 .icon-taichi:before {
   font-family: var(--font-icon);
   content: "\f6ad";
+}
+.icon-weixin:before {
+  font-family: var(--font-icon);
+  content: "\f1d7";
 }
 .icon-image:before {
   font-family: var(--font-icon);
