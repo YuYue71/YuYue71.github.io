@@ -44,7 +44,7 @@
 <meta property="og:description" content="Git &amp; GitHub 使用指南 適用於初學者與進階開發者，完整涵蓋日常開發常用 Git 指令與 GitHub 操作！  推薦 VSCode Git 插件 使用 VSCode 時，這些插件可以大幅提升 Git 相關操作的視覺化與便利性: GitLens：增強版 Git 功能，提供詳細的 commit、作者資訊與文件歷史視圖。 GitHub Copilot：利用 AI 輔助撰寫程式碼，不過">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2025-07-27T09:15:46.597Z">
-<meta property="article:modified_time" content="2025-07-27T09:47:33.819Z">
+<meta property="article:modified_time" content="2025-07-27T10:21:12.794Z">
 <meta property="article:author" content="幽月YuYue">
 <meta property="article:tag" content="GitHub">
 <meta property="article:tag" content="Git">
@@ -301,7 +301,7 @@
   <h3 class="toc-title">見出し</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-GitHub-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">Git &amp; GitHub 使用指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-VSCode-Git-%E6%8F%92%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">推薦 VSCode Git 插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-GitHub-%E5%AE%89%E5%85%A8%E8%A8%AD%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">推薦 GitHub 安全設置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%EF%BC%88Workflow%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">推薦開發流程（Workflow）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E8%B3%87%E6%BA%90"><span class="toc-number">1.4.</span> <span class="toc-text">附加資源</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E8%BC%83%E7%82%BA%E8%A9%B3%E7%B4%B0Git%E6%8C%87%E4%BB%A4%E9%9B%86"><span class="toc-number"></span> <span class="toc-text">以下是較為詳細Git指令集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text">Git初始設定</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B8%8C%E6%9C%9B%E9%80%99%E4%BB%BD%E6%9B%B4%E8%A9%B3%E7%B4%B0%E7%9A%84%E6%8C%87%E5%8D%97%E8%83%BD%E5%B9%AB%E5%8A%A9%E6%89%80%E6%9C%89%E5%88%9D%E5%AD%B8%E8%80%85%E6%9B%B4%E6%B7%B1%E5%85%A5%E5%9C%B0%E7%90%86%E8%A7%A3-Git-%E8%88%87-GitHub-%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">1.0.0.0.1.</span> <span class="toc-text">- 希望這份更詳細的指南能幫助所有初學者更深入地理解 Git 與 GitHub 的操作</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-GitHub-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">Git &amp; GitHub 使用指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-VSCode-Git-%E6%8F%92%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">推薦 VSCode Git 插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-GitHub-%E5%AE%89%E5%85%A8%E8%A8%AD%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">推薦 GitHub 安全設置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%EF%BC%88Workflow%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">推薦開發流程（Workflow）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E8%B3%87%E6%BA%90"><span class="toc-number">1.4.</span> <span class="toc-text">附加資源</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E8%BC%83%E7%82%BA%E8%A9%B3%E7%B4%B0Git%E6%8C%87%E4%BB%A4%E9%9B%86"><span class="toc-number"></span> <span class="toc-text">以下是較為詳細Git指令集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%85%8B%E9%9A%86GitHub%E9%81%A0%E7%AB%AF%E5%B0%88%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">Git克隆GitHub遠端專案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E6%9C%AC%E5%9C%B0%E9%80%A3%E6%8E%A5GitHub%E5%80%89%E5%BA%AB%E6%93%8D%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">Git本地連接GitHub倉庫操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A"><span class="toc-number">3.</span> <span class="toc-text">Git初始設定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">3.1.</span> <span class="toc-text">注意</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E8%88%87%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">4.</span> <span class="toc-text">初始化與版本控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">分支管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C"><span class="toc-number">5.1.</span> <span class="toc-text">遠端分支操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A6%8B%E9%8C%AF%E8%AA%A4%E8%88%87%E4%BF%AE%E5%BE%A9%E6%8C%87%E4%BB%A4"><span class="toc-number">6.</span> <span class="toc-text">常見錯誤與修復指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8B%80%E6%85%8B%E8%88%87%E6%AD%B7%E5%8F%B2%E6%8E%A7%E5%88%B6"><span class="toc-number">7.</span> <span class="toc-text">狀態與歷史控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%8D%E5%A4%96%E6%8A%80%E5%B7%A7"><span class="toc-number">8.</span> <span class="toc-text">額外技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%BD%E7%95%A5%E6%AA%94%E6%A1%88%E8%A8%AD%E5%AE%9A"><span class="toc-number">9.</span> <span class="toc-text">忽略檔案設定</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B8%8C%E6%9C%9B%E9%80%99%E4%BB%BD%E6%9B%B4%E8%A9%B3%E7%B4%B0%E7%9A%84%E6%8C%87%E5%8D%97%E8%83%BD%E5%B9%AB%E5%8A%A9%E6%89%80%E6%9C%89%E5%88%9D%E5%AD%B8%E8%80%85%E6%9B%B4%E6%B7%B1%E5%85%A5%E5%9C%B0%E7%90%86%E8%A7%A3-Git-%E8%88%87-GitHub-%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">9.0.0.0.1.</span> <span class="toc-text">- 希望這份更詳細的指南能幫助所有初學者更深入地理解 Git 與 GitHub 的操作</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
       
   </div>
 </div>
@@ -476,12 +476,114 @@
 </ul>
 <hr>
 <hr>
-<h1 id="以下是較為詳細Git指令集"><a href="#以下是較為詳細Git指令集" class="headerlink" title="以下是較為詳細Git指令集"></a>以下是較為詳細Git指令集</h1><h2 id="Git初始設定"><a href="#Git初始設定" class="headerlink" title="Git初始設定"></a>Git初始設定</h2><blockquote>
+<h1 id="以下是較為詳細Git指令集"><a href="#以下是較為詳細Git指令集" class="headerlink" title="以下是較為詳細Git指令集"></a>以下是較為詳細Git指令集</h1><h2 id="Git克隆GitHub遠端專案"><a href="#Git克隆GitHub遠端專案" class="headerlink" title="Git克隆GitHub遠端專案"></a>Git克隆GitHub遠端專案</h2><ul>
+<li>如果已有 GitHub 倉庫，可用 git clone 將遠端專案複製到本地<blockquote>
+<p>使用 HTTPS（適合大多數網路環境）：<br><code>git clone https://github.com/用戶名/倉庫名.git</code></p>
+<p>使用 SSH（需先設定 SSH 金鑰）：<br><code>git clone git@github.com:用戶名/倉庫名.git</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="Git本地連接GitHub倉庫操作"><a href="#Git本地連接GitHub倉庫操作" class="headerlink" title="Git本地連接GitHub倉庫操作"></a>Git本地連接GitHub倉庫操作</h2><ul>
+<li>完成本地版本控制後推送到 GitHub 進行遠端管理或分享<blockquote>
+<p>綁定遠端倉庫，<URL> 替換為 GitHub 專案的 URL<br><code>git remote add origin &lt;URL&gt;</code></p>
+<p>檢查遠端倉庫連結是否正確<br><code>git remote -v</code></p>
+<p>推送當前分支（預設 main）到遠端並設為預設追蹤分支<br><code>git push -u origin main</code></p>
+<p>後續提交直接推送更新到遠端<br><code>git push</code></p>
+<p>拉取遠端最新版本並合併，避免衝突<br><code>git pull</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="Git初始設定"><a href="#Git初始設定" class="headerlink" title="Git初始設定"></a>Git初始設定</h2><ul>
+<li>在開始使用 Git 之前，建議先設定使用者資訊，這些資訊會附加到每次提交中，方便追蹤修改的來源<blockquote>
 <p>設定全域的使用者名稱，讓 Git 知道提交是由誰執行的<br><code>git config --global user.name &quot;你的名稱&quot;</code></p>
 <p>設定全域的電子郵件地址，通常使用與 GitHub 帳戶相關聯的 Email，便於身份驗證和追蹤<br><code>git config --global user.email &quot;你的Email&quot;</code></p>
 <p>設定初始化 Git 倉庫時的預設分支名稱為 main，現代專案通常使用 main 而非舊版的 master<br><code>git config --global init.defaultBranch main</code></p>
 <p>設定 VSCode 作為 Git 的預設文字編輯器，–wait 參數確保編輯完成後才返回 Git<br><code>git config --global core.editor &quot;code --wait&quot;</code></p>
 </blockquote>
+</li>
+</ul>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
+<li>如果使用 SSH 方式連接 GitHub，需要先在本地產生金鑰，並將金鑰內容複製到 GitHub 帳戶的 SSH Keys 設定中<blockquote>
+<p>生成 SSH 金鑰，-t 指定密鑰類型（這裡使用 ed25519 為較安全的選擇），-C 則用來備註 Email 資訊<br><code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</code><br>完成後，將 <code>~/.ssh/id_ed25519.pub</code> 檔案中的內容貼到 GitHub 的 SSH Keys 頁面</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="初始化與版本控制"><a href="#初始化與版本控制" class="headerlink" title="初始化與版本控制"></a>初始化與版本控制</h2><ul>
+<li>當進入新專案時，需初始化 Git 倉庫並將檔案加入版本控制<blockquote>
+<p>初始化 Git 倉庫，建立 .git 子目錄<br><code>git init</code></p>
+<p>查看工作目錄狀態，顯示修改或新增的檔案<br><code>git status</code></p>
+<p>將所有改動加入暫存區，或指定檔案（如 index.html）<br><code>git add . </code><br><code>git add &lt;檔名&gt;</code></p>
+<p>提交暫存區變更到版本庫，-m 後附提交訊息描述更動<br><code>git commit -m &quot;提交訊息&quot;</code></p>
+<p>查看提交記錄，按時間反序列出所有 commit<br><code>git log</code></p>
+<p>檢查未加入暫存區或未提交的修改差異<br><code>git diff</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><ul>
+<li>分支可以讓多人同時開發多個功能，並且保持主分支的穩定性，分支合併後可增加工作流程的靈活性<blockquote>
+<p>查看本地所有分支，當前分支會標記 *<br><code>git branch</code></p>
+<p>建立本地新分支但不切換<br><code>git branch &lt;分支名&gt;</code></p>
+<p>切換分支（推薦使用 switch）<br><code>git switch &lt;分支名&gt;</code></p>
+<p>切換分支（舊版或習慣用法）<br><code>git checkout &lt;分支名&gt;</code></p>
+<p>建立並切換到新分支<br><code>git switch -c &lt;新分支名&gt;</code></p>
+<p>合併其他分支到當前分支<br><code>git merge &lt;分支名&gt;</code></p>
+<p>刪除本地已完成的分支<br><code>git branch -d &lt;分支名&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="遠端分支操作"><a href="#遠端分支操作" class="headerlink" title="遠端分支操作"></a>遠端分支操作</h3><ul>
+<li>遠端分支操作主要用於與遠程倉庫同步與維護分支，方便與團隊成員進行協作<blockquote>
+<p>取得遠端更新但不合併<br><code>git fetch</code></p>
+<p>拉取遠端更新並合併到當前分支<br><code>git pull</code></p>
+<p>推送本地分支到遠端（建立或更新）<br><code>git push origin &lt;分支名&gt;</code></p>
+<p>刪除遠端分支<br><code>git push origin --delete &lt;分支名&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="常見錯誤與修復指令"><a href="#常見錯誤與修復指令" class="headerlink" title="常見錯誤與修復指令"></a>常見錯誤與修復指令</h2><ul>
+<li>使用 Git 時常見的錯誤與修復指令<blockquote>
+<p>更新遠端倉庫 URL（遠端地址變更時使用）<br><code>git remote set-url origin &lt;新URL&gt;</code></p>
+<p>暫存未提交的修改（方便切換分支或解決衝突後繼續工作）<br><code>git stash</code></p>
+<p>還原剛剛暫存的修改到工作目錄<br><code>git stash pop</code></p>
+<p>遇到 git pull rebase 衝突時，臨時關閉 rebase<br><code>git config pull.rebase false</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="狀態與歷史控制"><a href="#狀態與歷史控制" class="headerlink" title="狀態與歷史控制"></a>狀態與歷史控制</h2><ul>
+<li>在編輯過程中，有時需要回退或還原更改，Git 提供多種方式應對<blockquote>
+<p>還原工作目錄中某檔案的修改，不影響暫存區<br><code>git restore &lt;檔案&gt;</code></p>
+<p>還原已加入暫存區的檔案，重置為最近一次 commit 的狀態<br><code>git restore --staged &lt;檔案&gt;</code></p>
+<p>回退 HEAD 到上一個 commit，保留暫存區改動以便修正後重新提交<br><code>git reset --soft HEAD^</code></p>
+<p>回退 HEAD 並重置暫存區，取消上次 commit 並將檔案設為未暫存<br><code>git reset --mixed HEAD^</code></p>
+<p>強制回退 HEAD 到上一個 commit，丟棄所有修改（謹慎使用）<br><code>git reset --hard HEAD^</code></p>
+<p>建立新 commit 撤銷指定 commit 的更改，不改寫歷史（適合已推送的情況）<br><code>git revert &lt;commit&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="額外技巧"><a href="#額外技巧" class="headerlink" title="額外技巧"></a>額外技巧</h2><ul>
+<li>更方便管理 commit 歷史與分支<blockquote>
+<p>簡潔圖形顯示 commit 歷史，快速理解分支與合併<br><code>git log --oneline --graph --all</code></p>
+<p>刪除未追蹤的檔案與資料夾，請謹慎使用<br><code>git clean -fd</code></p>
+<p>將指定 commit 引入當前分支，適合快速應用單一修正<br><code>git cherry-pick &lt;commit&gt;</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="忽略檔案設定"><a href="#忽略檔案設定" class="headerlink" title="忽略檔案設定"></a>忽略檔案設定</h2><ul>
+<li>建立一個 .gitignore 檔案可以讓 Git 忽略掉不想加入版本控制的檔案或資料夾，這對於敏感資料或自動生成的檔案特別有用<blockquote>
+<p>忽略所有 .log 檔案<br><code>*.log</code></p>
+<p>忽略 cache 資料夾<br><code>/cache/</code></p>
+<p>忽略 VSCode 個人設定檔<br><code>.vscode/</code></p>
+</blockquote>
+</li>
+</ul>
 <h6 id="希望這份更詳細的指南能幫助所有初學者更深入地理解-Git-與-GitHub-的操作"><a href="#希望這份更詳細的指南能幫助所有初學者更深入地理解-Git-與-GitHub-的操作" class="headerlink" title="- 希望這份更詳細的指南能幫助所有初學者更深入地理解 Git 與 GitHub 的操作"></a>- 希望這份更詳細的指南能幫助所有初學者更深入地理解 Git 與 GitHub 的操作</h6>
       
     </div>
@@ -542,7 +644,7 @@
       
         
         
-          <img data-src="https://tse1.mm.bing.net/th/id/OIP.e0EzCsXXb4GYU9rv6IqpcAHaFK?cb=thvnextc2&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
+          <img data-src="/covers/nachneco.png" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
         
       
       <a href="/ja/2025/07/25/self/"></a>
@@ -621,10 +723,10 @@
     
       <div>
         <span class="icon-brush"></span>
-        751
+        2k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:04
+        00:09
       </div>
     
     
@@ -657,7 +759,7 @@
   <h3 class="toc-title">見出し</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-GitHub-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">Git &amp; GitHub 使用指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-VSCode-Git-%E6%8F%92%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">推薦 VSCode Git 插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-GitHub-%E5%AE%89%E5%85%A8%E8%A8%AD%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">推薦 GitHub 安全設置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%EF%BC%88Workflow%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">推薦開發流程（Workflow）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E8%B3%87%E6%BA%90"><span class="toc-number">1.4.</span> <span class="toc-text">附加資源</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E8%BC%83%E7%82%BA%E8%A9%B3%E7%B4%B0Git%E6%8C%87%E4%BB%A4%E9%9B%86"><span class="toc-number"></span> <span class="toc-text">以下是較為詳細Git指令集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text">Git初始設定</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B8%8C%E6%9C%9B%E9%80%99%E4%BB%BD%E6%9B%B4%E8%A9%B3%E7%B4%B0%E7%9A%84%E6%8C%87%E5%8D%97%E8%83%BD%E5%B9%AB%E5%8A%A9%E6%89%80%E6%9C%89%E5%88%9D%E5%AD%B8%E8%80%85%E6%9B%B4%E6%B7%B1%E5%85%A5%E5%9C%B0%E7%90%86%E8%A7%A3-Git-%E8%88%87-GitHub-%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">1.0.0.0.1.</span> <span class="toc-text">- 希望這份更詳細的指南能幫助所有初學者更深入地理解 Git 與 GitHub 的操作</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-GitHub-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">Git &amp; GitHub 使用指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-VSCode-Git-%E6%8F%92%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">推薦 VSCode Git 插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6-GitHub-%E5%AE%89%E5%85%A8%E8%A8%AD%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">推薦 GitHub 安全設置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%96%A6%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%EF%BC%88Workflow%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">推薦開發流程（Workflow）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E8%B3%87%E6%BA%90"><span class="toc-number">1.4.</span> <span class="toc-text">附加資源</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E8%BC%83%E7%82%BA%E8%A9%B3%E7%B4%B0Git%E6%8C%87%E4%BB%A4%E9%9B%86"><span class="toc-number"></span> <span class="toc-text">以下是較為詳細Git指令集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%85%8B%E9%9A%86GitHub%E9%81%A0%E7%AB%AF%E5%B0%88%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">Git克隆GitHub遠端專案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E6%9C%AC%E5%9C%B0%E9%80%A3%E6%8E%A5GitHub%E5%80%89%E5%BA%AB%E6%93%8D%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">Git本地連接GitHub倉庫操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A"><span class="toc-number">3.</span> <span class="toc-text">Git初始設定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">3.1.</span> <span class="toc-text">注意</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E8%88%87%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">4.</span> <span class="toc-text">初始化與版本控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">分支管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C"><span class="toc-number">5.1.</span> <span class="toc-text">遠端分支操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A6%8B%E9%8C%AF%E8%AA%A4%E8%88%87%E4%BF%AE%E5%BE%A9%E6%8C%87%E4%BB%A4"><span class="toc-number">6.</span> <span class="toc-text">常見錯誤與修復指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8B%80%E6%85%8B%E8%88%87%E6%AD%B7%E5%8F%B2%E6%8E%A7%E5%88%B6"><span class="toc-number">7.</span> <span class="toc-text">狀態與歷史控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%8D%E5%A4%96%E6%8A%80%E5%B7%A7"><span class="toc-number">8.</span> <span class="toc-text">額外技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%BD%E7%95%A5%E6%AA%94%E6%A1%88%E8%A8%AD%E5%AE%9A"><span class="toc-number">9.</span> <span class="toc-text">忽略檔案設定</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%B8%8C%E6%9C%9B%E9%80%99%E4%BB%BD%E6%9B%B4%E8%A9%B3%E7%B4%B0%E7%9A%84%E6%8C%87%E5%8D%97%E8%83%BD%E5%B9%AB%E5%8A%A9%E6%89%80%E6%9C%89%E5%88%9D%E5%AD%B8%E8%80%85%E6%9B%B4%E6%B7%B1%E5%85%A5%E5%9C%B0%E7%90%86%E8%A7%A3-Git-%E8%88%87-GitHub-%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">9.0.0.0.1.</span> <span class="toc-text">- 希望這份更詳細的指南能幫助所有初學者更深入地理解 Git 與 GitHub 的操作</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
       
   </div>
 </div>
@@ -979,7 +1081,7 @@
           description: "",
           stripContent: "Git &amp;amp; GitHub 使用指南 適用於初學者與進階開發者，完整涵蓋日常開發常用 Git 指令與 GitHub 操作！  推薦 VSCode Git 插件 使用 VSCode 時，這些插件可以大幅提升 Git 相關操作的視覺化與便利性: GitLens：增強版 Git 功能，提供詳細的 commit、作者資訊與文件歷史視圖。 GitHub Copilot：利用 AI 輔助撰寫程式碼，不過需要單獨訂閱及設定。 Git Graph：直觀展示分支與合併歷史，利於視覺化管理版本控制。    推",
           date: "Sun Jul 27 2025 17:15:46 GMT+0800",
-          updated: "Sun Jul 27 2025 17:47:33 GMT+0800",
+          updated: "Sun Jul 27 2025 18:21:12 GMT+0800",
           cover: "/images/banner.webp",
         };
       </script>
