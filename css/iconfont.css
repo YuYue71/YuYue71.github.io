@@ -129,12 +129,6 @@
 .icon-twitter:before {
   content: "\e62a";
 }
-.icon-linkedin:before {
-  content: "\e614";
-}
-.icon-weibo:before {
-  content: "\e62c";
-}
 .icon-reddit:before {
   content: "\e61c";
 }
@@ -169,10 +163,6 @@
 .icon-weixin:before {
   font-family: "iconfont";
   content: "\e640";
-}
-.icon-qq:before {
-  font-family: "iconfont";
-  content: "\e63e";
 }
 .icon-image:before {
   font-family: "iconfont";
