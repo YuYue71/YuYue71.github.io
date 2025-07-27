@@ -291,9 +291,34 @@
         <div id="content"  class="sidebar-right" >
           <aside id="sidebar">
   
+    <div id="aplayer-sidebar" style="margin-bottom:1rem" data-aos="fade-up"></div>
+    <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+    <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const audioList = [{"name":"Towards the Horizon","artist":"Alexander Nakarada - CreatorChords","url":"/music/towards_the_horizon.mp3","cover":"/images/banner.png"}];
+        if (audioList.length === 0) return;
+  
+        new APlayer({
+          container: document.getElementById('aplayer-sidebar'),
+          fixed: false,
+          autoplay: true,
+          loop: "all",
+          order: "list",
+          preload: "auto",
+          volume: 0.7,
+          mutex: true,
+          listFolded: false,
+          lrcType: 0,
+          audio: audioList
+        });
+      });
+    </script>
+  
+  
+  
   
   <div class="sidebar-wrapper ">
-    
     <div class="sidebar-wrap" data-aos="fade-up">
       
         <div class="sidebar-author">
@@ -450,11 +475,11 @@
     </div>
   
     <div class="archives-category-list-item" data-aos="zoom-in">
-      <a class="archives-category-list-link" href="/zh-TW/categories/%E5%BB%A2%E6%96%87/">廢文</a>
+      <a class="archives-category-list-link" href="/zh-TW/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9/">自我介紹</a>
     </div>
   
     <div class="archives-category-list-item" data-aos="zoom-in">
-      <a class="archives-category-list-link" href="/zh-TW/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9/">自我介紹</a>
+      <a class="archives-category-list-link" href="/zh-TW/categories/%E5%BB%A2%E6%96%87/">廢文</a>
     </div>
   
 </div>
