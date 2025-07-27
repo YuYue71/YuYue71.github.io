@@ -15,7 +15,7 @@
 
   
 
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":{"en":"Copy successfully (*^▽^*)","zh-CN":"复制成功 (*^▽^*)","zh-TW":"複製成功 (*^▽^*)","ja":"コピー成功 (*^▽^*)","pt-BR":"Copiado com sucesso (*^▽^*)"},"fail":{"en":"Copy failed (ﾟ⊿ﾟ)ﾂ","zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ","zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ","ja":"コピー失敗 (ﾟ⊿ﾟ)ﾂ","pt-BR":"Falha ao copiar (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';window.REIMU_CONFIG.i18n_languages = ["zh-CN","ja"];</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":{"en":"Copy successfully (*^▽^*)","zh-CN":"复制成功 (*^▽^*)","zh-TW":"複製成功 (*^▽^*)","ja":"コピー成功 (*^▽^*)","pt-BR":"Copiado com sucesso (*^▽^*)"},"fail":{"en":"Copy failed (ﾟ⊿ﾟ)ﾂ","zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ","zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ","ja":"コピー失敗 (ﾟ⊿ﾟ)ﾂ","pt-BR":"Falha ao copiar (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';window.REIMU_CONFIG.i18n_languages = ["zh-TW","zh-CN","ja"];</script>
   
   <title>
     gitHub與Git的大致簡單使用教學 |
@@ -204,6 +204,8 @@
         </div>
         <ul class="select-items" id="select-items">
           
+            <li data-value="en" >English</li>
+          
             <li data-value="zh-TW" >正體中文</li>
           
             <li data-value="zh-CN" class="selected">简体中文</li>
@@ -226,7 +228,9 @@
           item.addEventListener("click", () => {
             const langMap = {};
             
-              langMap['zh-TW'] = '/2025/07/27/git-github/';
+              langMap['en'] = '/2025/07/27/git-github/';
+            
+              langMap['zh-TW'] = '/zh-TW/2025/07/27/git-github/';
             
               langMap['zh-CN'] = '/zh-CN/2025/07/27/git-github/';
             
@@ -716,7 +720,7 @@
       
         
         
-          <img data-src="https://bing.com/th/id/OIP.q2R2SWrlrvd6x5YqLTUkZwHaEK?o=7&amp;cb=thvnextc2rm=3&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
+          <img data-src="https://images5.alphacoders.com/106/thumb-1920-1061566.png" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
         
       
       <a href="/zh-CN/2025/07/25/self/"></a>
@@ -1320,7 +1324,7 @@
               envId: '',
               region: '',
               urls: [
-                '/about/index.html'
+                '/friend/index.html'
               ],
               includeReply: false
             }).then((res) => {
