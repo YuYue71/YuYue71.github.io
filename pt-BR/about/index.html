@@ -292,6 +292,7 @@
 
         <div id="content"  class="sidebar-right" >
           <aside id="sidebar">
+  <!-- 這裡紅色都正常,是VSCode的鍋,能正常運行不用在意 -->
   
     <div id="aplayer-sidebar" style="margin-bottom:1rem" data-aos="fade-up"></div>
     <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
@@ -442,7 +443,7 @@
 <li>#Python #Java #CSharp #Unity2D #Unity3D #HTML #JavaScript #css</li>
 </ul>
 <hr>
-<script>var REIMU_HEATMAP_CONFIG = {articleStats: [{"title":"gitHub與Git的大致簡單使用教學","date":"2025-07-27T09:15:46.597Z","updated":"2025-07-27T11:47:47.092Z","wordcount":1792,"url":"/2025/07/27/git-github/"},{"title":"簡單的了解我~","date":"2025-07-25T08:51:39.278Z","updated":"2025-07-27T11:47:44.854Z","wordcount":130,"url":"/2025/07/25/self/"},{"title":"這裡是起點","date":"2025-07-25T02:53:15.631Z","updated":"2025-07-27T11:47:46.043Z","wordcount":2,"url":"/2025/07/25/hello-world/"}], i18n: {"en":{"no_articles":"No articles","words":"word(s)","total_articles":"$1 article(s), $2 word(s)"},"ja":{"no_articles":"記事がありません","words":"文字","total_articles":"$1 記事, $2 文字"},"zh-CN":{"no_articles":"没有文章","words":"字","total_articles":"共 $1 篇文章, $2 字"},"zh-TW":{"no_articles":"没有文章","words":"字","total_articles":"共 $1 篇文章, $2 字"},"pt-BR":{"no_articles":"Sem artigos","words":"palavra(s)","total_articles":"$1 artigo(s), $2 palavra(s)"}}, levelStandard: "1000,5000,10000"};</script>
+<script>var REIMU_HEATMAP_CONFIG = {articleStats: [{"title":"gitHub與Git的大致簡單使用教學","date":"2025-07-27T09:15:46.597Z","updated":"2025-07-27T11:47:47.092Z","wordcount":1792,"url":"/2025/07/27/git-github/"},{"title":"這裡是起點","date":"2025-07-25T02:53:15.631Z","updated":"2025-07-27T11:47:46.043Z","wordcount":2,"url":"/2025/07/25/hello-world/"},{"title":"簡單的了解我~","date":"2025-07-25T08:51:39.278Z","updated":"2025-07-27T11:47:44.854Z","wordcount":130,"url":"/2025/07/25/self/"}], i18n: {"en":{"no_articles":"No articles","words":"word(s)","total_articles":"$1 article(s), $2 word(s)"},"ja":{"no_articles":"記事がありません","words":"文字","total_articles":"$1 記事, $2 文字"},"zh-CN":{"no_articles":"没有文章","words":"字","total_articles":"共 $1 篇文章, $2 字"},"zh-TW":{"no_articles":"没有文章","words":"字","total_articles":"共 $1 篇文章, $2 字"},"pt-BR":{"no_articles":"Sem artigos","words":"palavra(s)","total_articles":"$1 artigo(s), $2 palavra(s)"}}, levelStandard: "1000,5000,10000"};</script>
 <link rel="stylesheet" href="/css/heat-map.css">
 <div id="heatmap"></div>
 <script src="/js/heat_map.js"></script>
@@ -719,8 +720,6 @@
 
     </div>
     
-    
-      <div id="aplayer" theme="var(--color-link)"></div>
     
     
     
@@ -1393,7 +1392,7 @@
         theme: "var(--color-link)",
         container: document.getElementById('aplayer'),
         audio: [{"name":"Towards the Horizon","artist":"Alexander Nakarada - CreatorChords","url":"/music/towards_the_horizon.mp3","cover":"/images/banner.png"}] || [],
-        fixed: isMobile ? true : (true || false),
+        fixed: isMobile ? true : (false || false),
         autoplay: true || false,
         loop: 'all' || 'all',
         order: 'list' || 'list',

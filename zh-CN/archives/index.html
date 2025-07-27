@@ -288,6 +288,7 @@
 
         <div id="content"  class="sidebar-right" >
           <aside id="sidebar">
+  <!-- 這裡紅色都正常,是VSCode的鍋,能正常運行不用在意 -->
   
     <div id="aplayer-sidebar" style="margin-bottom:1rem" data-aos="fade-up"></div>
     <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
@@ -473,11 +474,11 @@
     </div>
   
     <div class="archives-category-list-item" data-aos="zoom-in">
-      <a class="archives-category-list-link" href="/zh-CN/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9/">自我介紹</a>
+      <a class="archives-category-list-link" href="/zh-CN/categories/%E5%BB%A2%E6%96%87/">廢文</a>
     </div>
   
     <div class="archives-category-list-item" data-aos="zoom-in">
-      <a class="archives-category-list-link" href="/zh-CN/categories/%E5%BB%A2%E6%96%87/">廢文</a>
+      <a class="archives-category-list-link" href="/zh-CN/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9/">自我介紹</a>
     </div>
   
 </div>
@@ -684,8 +685,6 @@
 
     </div>
     
-    
-      <div id="aplayer" theme="var(--color-link)"></div>
     
     
     
@@ -968,7 +967,7 @@
         theme: "var(--color-link)",
         container: document.getElementById('aplayer'),
         audio: [{"name":"Towards the Horizon","artist":"Alexander Nakarada - CreatorChords","url":"/music/towards_the_horizon.mp3","cover":"/images/banner.png"}] || [],
-        fixed: isMobile ? true : (true || false),
+        fixed: isMobile ? true : (false || false),
         autoplay: true || false,
         loop: 'all' || 'all',
         order: 'list' || 'list',
