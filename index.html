@@ -1,6 +1,6 @@
 
   <!DOCTYPE html>
-  <html lang="default"  
+  <html lang="zh-TW"  
     
       data-theme-mode="auto"
     
@@ -15,7 +15,7 @@
 
   
 
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":{"en":"Copy successfully (*^▽^*)","zh-CN":"复制成功 (*^▽^*)","zh-TW":"複製成功 (*^▽^*)","ja":"コピー成功 (*^▽^*)","pt-BR":"Copiado com sucesso (*^▽^*)"},"fail":{"en":"Copy failed (ﾟ⊿ﾟ)ﾂ","zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ","zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ","ja":"コピー失敗 (ﾟ⊿ﾟ)ﾂ","pt-BR":"Falha ao copiar (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = 'All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';window.REIMU_CONFIG.i18n_languages = ["zh-TW","zh-CN","ja","pt-BR"];</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":{"en":"Copy successfully (*^▽^*)","zh-CN":"复制成功 (*^▽^*)","zh-TW":"複製成功 (*^▽^*)","ja":"コピー成功 (*^▽^*)","pt-BR":"Copiado com sucesso (*^▽^*)"},"fail":{"en":"Copy failed (ﾟ⊿ﾟ)ﾂ","zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ","zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ","ja":"コピー失敗 (ﾟ⊿ﾟ)ﾂ","pt-BR":"Falha ao copiar (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本部落格所有文章除特別聲明外，均採用 BY-NC-SA 授權協議。轉載請註明出處！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';window.REIMU_CONFIG.i18n_languages = ["zh-CN","ja"];</script>
   
   <title>
     
@@ -41,7 +41,7 @@
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="幽月YuYue">
 <meta property="og:description" content="YuYue的異想空間">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://example.com/images/banner.webp">
 <meta property="article:author" content="幽月YuYue">
 <meta property="article:tag" content="關鍵字">
@@ -103,7 +103,7 @@
       
         
       
-      <div class="loading-word"></div>
+      <div class="loading-word">喵喵...</div>
     </div>
   </div>
   </div>
@@ -149,7 +149,7 @@
               &#xe62b;
              
           </div>
-          <a class="main-nav-link" href="/default/">Home</a>
+          <a class="main-nav-link" href="/">首頁</a>
         </span>
       
         <span class="main-nav-link-wrap">
@@ -158,7 +158,7 @@
               &#xe62b;
              
           </div>
-          <a class="main-nav-link" href="/default/archives">Archives</a>
+          <a class="main-nav-link" href="/archives">歸檔</a>
         </span>
       
         <span class="main-nav-link-wrap">
@@ -167,7 +167,7 @@
               &#xe62b;
              
           </div>
-          <a class="main-nav-link" href="/default/about">About</a>
+          <a class="main-nav-link" href="/about">關於</a>
         </span>
       
         <span class="main-nav-link-wrap">
@@ -176,7 +176,7 @@
               &#xe62b;
              
           </div>
-          <a class="main-nav-link" href="/default/friend">Friend</a>
+          <a class="main-nav-link" href="/friend">友鏈</a>
         </span>
       
     
@@ -184,7 +184,7 @@
   </nav>
   <nav id="sub-nav">
     
-      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed" target="_blank"></a>
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 訂閱" target="_blank"></a>
     
     
     
@@ -195,19 +195,15 @@
       <div class="custom-dropdown">
         <div class="select-selected" id="select-selected">
           <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
-          <span id="selected-lang"></span>
+          <span id="selected-lang">正體中文</span>
         </div>
         <ul class="select-items" id="select-items">
           
-            <li data-value="en" >English</li>
-          
-            <li data-value="zh-TW" >正體中文</li>
+            <li data-value="zh-TW" class="selected">正體中文</li>
           
             <li data-value="zh-CN" >简体中文</li>
           
             <li data-value="ja" >日本語</li>
-          
-            <li data-value="pt-BR" >Português Brasileiro</li>
           
         </ul>
       </div>
@@ -225,15 +221,11 @@
           item.addEventListener("click", () => {
             const langMap = {};
             
-              langMap['en'] = '/';
-            
-              langMap['zh-TW'] = '/zh-TW/';
+              langMap['zh-TW'] = '/';
             
               langMap['zh-CN'] = '/zh-CN/';
             
               langMap['ja'] = '/ja/';
-            
-              langMap['pt-BR'] = '/pt-BR/';
             
             selectedLang.textContent = item.textContent;
             selectItems.classList.remove("show");
@@ -328,15 +320,15 @@
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>Post</div>
+    <div>文章</div>
     <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-category">
-    <div>Category</div>
+    <div>分類</div>
     <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-tag">
-    <div>Tag</div>
+    <div>標籤</div>
     <div class="sidebar-state-number">14</div>
   </div>
 </div>
@@ -353,43 +345,43 @@
   
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/" aria-label="Home"></a>
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首頁"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">Home</div>
+        <div class="sidebar-menu-link">首頁</div>
       </div>
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/archives" aria-label="Archives"></a>
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="歸檔"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">Archives</div>
+        <div class="sidebar-menu-link">歸檔</div>
       </div>
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/about" aria-label="About"></a>
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="關於"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">About</div>
+        <div class="sidebar-menu-link">關於</div>
       </div>
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/friend" aria-label="Friend"></a>
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友鏈"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">Friend</div>
+        <div class="sidebar-menu-link">友鏈</div>
       </div>
     
   
@@ -413,16 +405,16 @@
         
         <div class="post-categories-wrap">
           
-          <a class="post-link" href="/default/categories/%E5%B9%BD%E6%9C%88YuYue" aria-label=""></a>
+          <a class="post-link" href="/categories/%E5%B9%BD%E6%9C%88YuYue" aria-label=""></a>
           <div class="post-categories-cover">
             
               
               
-                <img data-src="https://i-blog.csdnimg.cn/blog_migrate/890162c202a076447c93968511b64423.png" data-sizes="auto" alt="幽月YuYue" class="lazyload">
+                <img data-src="https://bing.com/th/id/OIP.q2R2SWrlrvd6x5YqLTUkZwHaEK?o=7&amp;cb=thvnextc2rm=3&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" data-sizes="auto" alt="幽月YuYue" class="lazyload">
               
             
             <h2>幽月YuYue</h2>
-            <h3>0 posts</h3>
+            <h3>0 篇文章</h3>
           </div>
         </div>
         
@@ -437,22 +429,22 @@
       <div class="post-wrapper">
   <div class="post-wrap-left" data-aos="fade-up">
     
-      <a class="post-link" href="/default/2025/07/27/git-github/" aria-label="gitHub與Git的大致簡單使用教學"></a>
+      <a class="post-link" href="/2025/07/27/git-github/" aria-label="gitHub與Git的大致簡單使用教學"></a>
     
     
     <div class="post-cover-left">
       
         
         
-          <img data-src="https://pbs.twimg.com/media/FcoNE-2aMAAXlAi.png" data-sizes="auto" alt="gitHub與Git的大致簡單使用教學" class="lazyload">
+          <img data-src="https://tse4.mm.bing.net/th/id/OIP.zMf51808IUGtdgUpDyV13QHaEK?cb=thvnextc2&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" data-sizes="auto" alt="gitHub與Git的大致簡單使用教學" class="lazyload">
         
       
     </div>
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2025-07-27</span>
-        <span><span class="icon-pencil"></span>1.9k words</span>
-        <span><span class="icon-clock"></span>7 mins</span>
+        <span><span class="icon-pencil"></span>1.9k 字</span>
+        <span><span class="icon-clock"></span>7 分鐘</span>
       </div>
       <h2 class="post-title">gitHub與Git的大致簡單使用教學</h2>
       <article class="post-article">
@@ -481,22 +473,22 @@ Git Graph：直觀展示分支與合併歷史，利於視覺化管理版本控�
       <div class="post-wrapper">
   <div class="post-wrap-right" data-aos="fade-up">
     
-      <a class="post-link" href="/default/2025/07/25/self/" aria-label="簡單的了解我~"></a>
+      <a class="post-link" href="/2025/07/25/self/" aria-label="簡單的了解我~"></a>
     
     
     <div class="post-cover-right">
       
         
         
-          <img data-src="https://i-blog.csdnimg.cn/blog_migrate/890162c202a076447c93968511b64423.png" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
+          <img data-src="https://images5.alphacoders.com/106/thumb-1920-1061566.png" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
         
       
     </div>
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2025-07-25</span>
-        <span><span class="icon-pencil"></span>132 words</span>
-        <span><span class="icon-clock"></span>1 min</span>
+        <span><span class="icon-pencil"></span>132 字</span>
+        <span><span class="icon-clock"></span>1 分鐘</span>
       </div>
       <h2 class="post-title">簡單的了解我~</h2>
       <article class="post-article">
@@ -532,22 +524,22 @@ Git Graph：直觀展示分支與合併歷史，利於視覺化管理版本控�
       <div class="post-wrapper">
   <div class="post-wrap-left" data-aos="fade-up">
     
-      <a class="post-link" href="/default/2025/07/25/hello-world/" aria-label="這裡是起點"></a>
+      <a class="post-link" href="/2025/07/25/hello-world/" aria-label="這裡是起點"></a>
     
     
     <div class="post-cover-left">
       
         
         
-          <img data-src="https://i-blog.csdnimg.cn/blog_migrate/890162c202a076447c93968511b64423.png" data-sizes="auto" alt="這裡是起點" class="lazyload">
+          <img data-src="https://tse2.mm.bing.net/th/id/OIP.QMYYqk9do-6_3hO_jlf_5AHaEo?rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=0" data-sizes="auto" alt="這裡是起點" class="lazyload">
         
       
     </div>
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2025-07-25</span>
-        <span><span class="icon-pencil"></span>2 words</span>
-        <span><span class="icon-clock"></span>1 min</span>
+        <span><span class="icon-pencil"></span>2 字</span>
+        <span><span class="icon-clock"></span>1 分鐘</span>
       </div>
       <h2 class="post-title">這裡是起點</h2>
       <article class="post-article">
@@ -584,7 +576,7 @@ Git Graph：直觀展示分支與合併歷史，利於視覺化管理版本控�
     </div>
     
       <div>
-        Powered by&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        基於&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
         Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
       </div>
     
@@ -602,10 +594,10 @@ Git Graph：直觀展示分支與合併歷史，利於視覺化管理版本控�
     
       <div>
         <span class="icon-eye"></span>
-        <span id="busuanzi_container_site_pv">Number of visits&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        <span id="busuanzi_container_site_pv">總訪問量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
         &nbsp;|&nbsp;
         <span class="icon-user"></span>
-        <span id="busuanzi_container_site_uv">Number of visitors&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+        <span id="busuanzi_container_site_uv">總訪客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
       </div>
     
   </div>
@@ -629,15 +621,15 @@ Git Graph：直觀展示分支與合併歷史，利於視覺化管理版本控�
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
-    <div>Post</div>
+    <div>文章</div>
     <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-category">
-    <div>Category</div>
+    <div>分類</div>
     <div class="sidebar-state-number">3</div>
   </div>
   <div class="sidebar-state-tag">
-    <div>Tag</div>
+    <div>標籤</div>
     <div class="sidebar-state-number">14</div>
   </div>
 </div>
@@ -654,43 +646,43 @@ Git Graph：直觀展示分支與合併歷史，利於視覺化管理版本控�
   
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/" aria-label="Home"></a>
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首頁"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">Home</div>
+        <div class="sidebar-menu-link">首頁</div>
       </div>
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/archives" aria-label="Archives"></a>
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="歸檔"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">Archives</div>
+        <div class="sidebar-menu-link">歸檔</div>
       </div>
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/about" aria-label="About"></a>
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="關於"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">About</div>
+        <div class="sidebar-menu-link">關於</div>
       </div>
     
       <div class="sidebar-menu-link-wrap">
-        <a class="sidebar-menu-link-dummy" href="/default/friend" aria-label="Friend"></a>
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友鏈"></a>
         <div class="sidebar-menu-icon icon rotate">
           
             &#xe62b;
           
         </div>
-        <div class="sidebar-menu-link">Friend</div>
+        <div class="sidebar-menu-link">友鏈</div>
       </div>
     
   
