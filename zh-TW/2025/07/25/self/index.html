@@ -302,13 +302,14 @@
 
         <div id="content"  class="sidebar-right" >
           <aside id="sidebar">
+  <!-- 這裡紅色都正常,是VSCode的鍋,能正常運行不用在意 -->
   
     <div id="aplayer-sidebar" style="margin-bottom:1rem" data-aos="fade-up"></div>
     <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
     <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const audioList = "[{"name":"Towards the Horizon","artist":"Alexander Nakarada - CreatorChords","url":"/music/towards_the_horizon.mp3","cover":"/images/banner.png"}]";
+        const audioList = [{"name":"Towards the Horizon","artist":"Alexander Nakarada - CreatorChords","url":"/music/towards_the_horizon.mp3","cover":"/images/banner.png"}];
         if (audioList.length === 0) return;
   
         new APlayer({
@@ -586,7 +587,7 @@
         
           
           
-            <img data-src="https://i-blog.csdnimg.cn/blog_migrate/890162c202a076447c93968511b64423.png" data-sizes="auto" alt="gitHub與Git的大致簡單使用教學" class="lazyload">
+            <img data-src="https://images5.alphacoders.com/106/thumb-1920-1061566.png" data-sizes="auto" alt="gitHub與Git的大致簡單使用教學" class="lazyload">
           
         
         <a href="/zh-TW/2025/07/27/git-github/"></a>
