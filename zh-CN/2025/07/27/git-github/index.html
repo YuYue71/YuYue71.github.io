@@ -298,6 +298,35 @@
   
   
   <div class="sidebar-wrapper wrap-sticky">
+    <!-- APlayer 本地播放器（放在 sidebar） -->
+<div id="aplayer-sidebar" style="margin-bottom:1rem"></div>
+<link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
+<script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new APlayer({
+      container: document.getElementById('aplayer-sidebar'),
+      fixed: false,
+      autoplay: false,
+      loop: 'all',
+      order: 'list',
+      preload: 'auto',
+      volume: 0.7,
+      mutex: true,
+      listFolded: false,
+      lrcType: 0,
+      audio: [
+        {
+          name: 'Towards the Horizon',
+          artist: 'Alexander Nakarada',
+          url: '/music/towards_the_horizon.mp3',
+          cover: '/images/banner.png'
+        }
+      ]
+    });
+  });
+</script>
+
     <div class="sidebar-wrap" data-aos="fade-up">
       
         
@@ -698,7 +727,7 @@
       
         
         
-          <img data-src="https://images5.alphacoders.com/106/thumb-1920-1061566.png" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
+          <img data-src="https://pbs.twimg.com/media/FcoNE-2aMAAXlAi.png" data-sizes="auto" alt="簡單的了解我~" class="lazyload">
         
       
       <a href="/zh-CN/2025/07/25/self/"></a>
@@ -1304,7 +1333,7 @@
               envId: '',
               region: '',
               urls: [
-                '/default/friend/index.html'
+                '/default/about/index.html'
               ],
               includeReply: false
             }).then((res) => {
@@ -1582,7 +1611,7 @@
         container: document.getElementById('aplayer'),
         audio: [{"name":"Towards the Horizon","artist":"Alexander Nakarada - CreatorChords","url":"/music/towards_the_horizon.mp3","cover":"/images/banner.png"}] || [],
         fixed: isMobile ? true : (true || false),
-        autoplay: false || false,
+        autoplay: true || false,
         loop: 'all' || 'all',
         order: 'list' || 'list',
         preload: 'auto' || 'auto',
